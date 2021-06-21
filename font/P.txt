@@ -1,0 +1,13 @@
+pattern: 42
+hand movement: (30)(10).(0,30)(0,60).(10)(30).(40,60)(40,30).
+
+HOLEY
+
+pattern: 42
+hand movement: (40)(20).(10,60)(30,60).(20)(40).(30,30)(10,30).
+
+ROTATED 90 DEGREES:
+
+pattern: 42
+hand movement: (40)(0).
+manual setting: gravity=500

@@ -1,0 +1,26 @@
+reversed G: (CHOSEN)
+
+pattern: 4116
+hand movement: (10)(32.5).(10)(32.5).(10)(32.5).(40)(20).(10)(32.5).(10)(32.5).(10)(32.5).(20)(40).
+manual setting: gravity=500
+
+slanted reversed L:
+
+pattern: (6,2)(2x,2x)
+hand movement: (20)(40).(40,20)(40,20).(20)(20).(20,20)(20,20).(40)(20).(40,20)(40,20).(20)(20).(20,20)(20,20).
+manual setting: gravity=500
+
+reversed L:
+
+pattern: (6,2)(2x,2x)
+hand movement: (20)(40).(40)(40).(20)(20).(20)(20).(40)(20).(40)(40).(20)(20).(20)(20).
+manual setting: gravity=500
+
+2-ball patterns:
+  4112
+  (4,2x)(2x,0)
+
+3-ball patterns:
+  8112
+  (8,2x)(2x,0)
+  (6,2)(2x,2x)

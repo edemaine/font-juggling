@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE jml SYSTEM "file://jml.dtd">
+<jml version="1.2">
+<pattern>
+<title>Yo-Yo</title>
+<prop type="ball"/>
+<setup jugglers="1" paths="3" props="1,1,1"/>
+<symmetry type="delay" pperm="(1)(2)(3)" delay="0.8235"/>
+<event x="3.5647" y="0" z="16.3295" t="0.1235" hand="1:left">
+<holding path="1"/>
+</event>
+<event x="6.4749" y="0" z="3.9783" t="0.2058" hand="1:right">
+<throw path="2" type="toss"/>
+</event>
+<event x="5.3031" y="0" z="41.0392" t="0.276" hand="1:left">
+<holding path="1"/>
+</event>
+<event x="23.1843" y="0" z="8.1392" t="0.35" hand="1:right">
+<catch path="3"/>
+</event>
+<event x="6.0764" y="0" z="64.7705" t="0.4608" hand="1:left">
+<holding path="1"/>
+</event>
+<event x="21.2221" y="0" z="6.9974" t="0.6176" hand="1:right">
+<throw path="3" type="toss"/>
+</event>
+<event x="6.4113" y="0" z="3.487" t="0.7617" hand="1:right">
+<catch path="2"/>
+</event>
+</pattern>
+</jml>

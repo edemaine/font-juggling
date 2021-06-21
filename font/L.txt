@@ -1,0 +1,12 @@
+pattern: (2,6)(2x,2x)
+hand movement: (40)(40).(20)(40).(20)(20).(20)(20).(40)(40).(40)(20).(20)(20).(20)(20).
+manual setting: gravity=500
+
+2-ball patterns:
+  4112
+  (4,2x)(2x,0)
+
+3-ball patterns:
+  8112
+  (8,2x)(2x,0)
+  (6,2)(2x,2x)

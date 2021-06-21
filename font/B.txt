@@ -1,0 +1,3 @@
+pattern: 4440   (or 4)
+hand movement: (35)(0).
+manual setting: gravity=500
