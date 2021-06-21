@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    title Juggling Font
+    script(type="text/javascript", src="node_modules/@svgdotjs/svg.js/dist/svg.min.js")
+    script(type="text/javascript", src="node_modules/furls/furls.js")
+    script(type="text/javascript", src="node_modules/font-webapp/font-webapp.js")
+    script(type="text/javascript", src="font.js")
+    script(type="text/javascript", src="index.js")
+    style
+      :stylus
+        @media print
+          .noprint
+            display: none
+          #conveyer
+            width: 100%
+
+        /*body { background-color: black; color: white; }*/
+        .w-100
+          width: 100%
+        td
+          vertical-align: middle
+        textarea
+          vertical-align: middle
+
+        svg
+          width: 100%
+          height: 100%
+    //#include virtual="../../analytics.html"
+  body
+    table.w-100
+      tr
+        td(style="text-align: left; vertical-align: middle;")
+          h1 Juggling Font
+        td(style="text-align: right; vertical-align: middle;")
+          h2 by <a href="https://erikdemaine.org/">Erik Demaine</A> and <a href="https://martindemaine.org">Martin Demaine</A>, 2015</H2>
+
+    table#data.noprint.w-100
+      tr
+        td
+          label(for="text") Enter text to render:
+          | &nbsp;
+          textarea#text(name="text", rows=4, cols=40) text
+        td
+          input#traj(type="checkbox", checked)
+          label(for="traj") Trajectory view
+          br
+          input#anim(type="checkbox", checked)
+          label(for="anim") Animated view
+
+    p
+
+    #output.w-100
+
+    hr.noprint
+
+    p.noprint.
+      This font is <b><i>preliminary</b></i> and we welcome your
+      <a href="mailto:edemaine+juggling@mit.edu">feedback and suggestions
+      for improvement</a>!
+      Each letter is represented by a juggling pattern, shown as either an
+      animation produced by the
+      <a href="http://jugglinglab.sourceforge.net/">Juggling Lab</a> software
+      or as a single image of the ball trajectories (produced by overlaying
+      the frames of the animation).
+      It was prepared in honor of
+      <a href="http://www.math.ucsd.edu/~fan/ron/">Ron Graham</a>'s
+      <a href="https://sites.google.com/site/connectionsindiscretemath/">80th birthday</a>.
+
+    p.noprint.
+      Check out <a href="https://erikdemaine.org/fonts/">other mathematical and
+      puzzle fonts</a>. &bull; Feedback or not working?
+      <a href="mailto:edemaine+fonts@mit.edu">Email Erik</a>.

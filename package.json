@@ -1,0 +1,29 @@
+{
+  "name": "font-juggling",
+  "version": "0.0.1",
+  "description": "",
+  "repository": "https://github.com/edemaine/font-juggling.git",
+  "main": "index.js",
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.0.16",
+    "font-webapp": "0.0.0",
+    "furls": "^0.4.1"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.5.1",
+    "gulp": "^4.0.2",
+    "gulp-chmod": "^3.0.0",
+    "gulp-coffee": "^3.0.3",
+    "gulp-pug": "^5.0.0",
+    "jstransformer-stylus": "^1.5.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "pug": "gulp pug",
+    "coffee": "gulp coffee",
+    "watch": "gulp watch",
+    "font": "coffee make.coffee"
+  },
+  "author": "Erik Demaine",
+  "license": "MIT"
+}
