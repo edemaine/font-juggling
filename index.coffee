@@ -10,15 +10,15 @@ window?.onload = ->
       glyph = window.font[char]
       g = @renderGroup.group()
       height = 0
-      if state.traj and glyph.traj
+      if (showTraj = state.traj and glyph.traj)
         g.image glyph.traj
         .size glyph.width, glyph.height
-        height += glyph.height if state.traj
+        height += glyph.height
       if state.anim and glyph.anim
-        g.image glyph.anim
-        .y glyph.height
+        anim = g.image glyph.anim
         .size glyph.width, glyph.height
-        height += glyph.height if state.anim
+        anim.y glyph.height if showTraj
+        height += glyph.height
       element: g
       width: glyph.width
       height: height
