@@ -18,7 +18,11 @@ html
         /*body { background-color: black; color: white; }*/
         .w-100
           width: 100%
-        td
+        .text-left
+          text-align: left
+        .text-right
+          text-align: right
+        .align-middle
           vertical-align: middle
         textarea
           vertical-align: middle
@@ -30,9 +34,9 @@ html
   body
     table.w-100
       tr
-        td(style="text-align: left; vertical-align: middle;")
+        td.text-left.align-middle
           h1 Juggling Font
-        td(style="text-align: right; vertical-align: middle;")
+        td.text-right.align-middle
           h2 by <a href="https://erikdemaine.org/">Erik Demaine</A> and <a href="https://martindemaine.org">Martin Demaine</A>, 2015</H2>
 
     table#data.noprint.w-100
