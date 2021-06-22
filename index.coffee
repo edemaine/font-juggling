@@ -24,4 +24,8 @@ window?.onload = ->
       height: height
 
   document.getElementById 'downloadSVG'
-  ?.addEventListener 'click', -> app.downloadSVG 'juggling.svg'
+  ?.addEventListener 'click', -> app.downloadSVG 'juggling.svg',
+    app.svg.svg()
+    ## Make image URLs absolute
+    .replace /href="/g, "$&#{window.location.origin}" +
+      window.location.pathname.replace /\/[^\/]*$/, '/'
