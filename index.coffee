@@ -4,11 +4,11 @@ window?.onload = ->
     margin: 20
     charKern: 30
     lineKern: 100
-    renderChar: (char, state) ->
+    renderChar: (char, state, target) ->
       char = char.toUpperCase()
       return unless char of window.font
       glyph = window.font[char]
-      g = @renderGroup.group()
+      g = target.group()
       height = 0
       if (showTraj = state.traj and glyph.traj)
         g.image glyph.traj
